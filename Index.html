@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Raffaele Cammi — Curriculum Vitae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{ --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04); --radius:16px; font-family: 'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#061021);color:#e6eef6;line-height:1.45}
+    .container{max-width:980px;margin:40px auto;padding:28px}
+    .grid{display:grid;gap:20px}
+    .top{grid-template-columns:220px 1fr;align-items:start}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:20px;border-radius:var(--radius);box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .avatar{width:180px;height:180px;border-radius:14px;overflow:hidden;border:4px solid rgba(255,255,255,0.04);background:linear-gradient(135deg,#0b1020,#142033);display:flex;align-items:center;justify-content:center}
+    .avatar img{width:100%;height:100%;object-fit:cover}
+    h1{margin:0;font-size:22px}
+    .title{color:var(--muted);font-weight:600}
+    .contact{margin-top:12px;font-size:14px;color:var(--muted)}
+    .section{margin-top:18px}
+    .section h3{margin:0 0 8px 0;font-size:16px}
+    .experience-item{padding:12px;border-radius:10px;background:rgba(255,255,255,0.02);margin-bottom:10px}
+    .muted{color:var(--muted)}
+    .linkbtn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:860px){.top{grid-template-columns:1fr} .avatar{width:140px;height:140px;margin:0 auto}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid top">
+
+      <!-- LEFT COLUMN -->
+      <div class="card">
+        <div style="display:flex;flex-direction:column;align-items:center">
+          <div class="avatar">
+            <img src="Photo.png" alt="Foto Raffaele Cammi">
+          </div>
+          <h1 id="name">Raffaele Cammi</h1>
+          <div class="title">Ingegnere Informatico</div>
+          <div class="contact">Pavia (PV)  <a href="mailto:raffaelecammi@gmail.com" style="color:inherit;text-decoration:underline">raffaelecammi@gmail.com</a></div>
+
+          <div class="section" style="width:100%;text-align:center;margin-top:20px">
+            <button class="linkbtn" id="printBtn">Stampa / Salva come PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;gap:20px;align-items:start">
+
+          <!-- MAIN CONTENT -->
+          <div style="flex:1">
+            <h2 style="margin:0;font-size:18px">Profilo</h2>
+            <p class="muted" style="margin-top:6px">Sono una persona sociale, ambiziosa e flessibile, con passione per la didattica e la tecnologia. Unisco competenze tecniche a una forte attitudine comunicativa e organizzativa, maturata sia nel mondo dell’ingegneria informatica che nell’insegnamento.</p>
+
+            <div class="section">
+              <h3>Esperienze</h3>
+
+              <div class="experience-item">
+                <strong>Docente di ruolo — Matematica e Fisica</strong>
+                <div class="muted">IISS "Leonardo Da Vinci", Vigevano — Set 2024 — Giu 2025; ripreso Set 2025 — Presente</div>
+                <p class="muted">Insegnamento presso scuola secondaria superiore. Preparazione e gestione delle lezioni, valutazione continua, supporto didattico personalizzato agli studenti e gestione del gruppo classe.</p>
+              </div>
+
+              <div class="experience-item">
+                <strong>Tutor Privato</strong>
+                <div class="muted">2018 — Presente</div>
+                <p class="muted">Tutoraggio individuale in matematica, fisica, elettronica e informatica per studenti di scuole superiori e università.</p>
+              </div>
+
+              <div class="experience-item">
+                <strong>S.COOP.R.L. AICSPORT — Bagnino / Assistente alla clientela</strong>
+                <div class="muted">2019 — 2024 (stagionale)</div>
+                <p class="muted">Sorveglianza, sicurezza, assistenza al pubblico.</p>
+              </div>
+
+              <div class="experience-item">
+                <strong>Le Rotonde S.R.L. — Bagnino notturno</strong>
+                <div class="muted">2021 — 2024 (stagionale)</div>
+                <p class="muted">Supporto alla sicurezza in contesti ad alta affluenza.</p>
+              </div>
+
+              <div class="experience-item">
+                <strong>Neutel S.R.L. — Stage tecnico</strong>
+                <div class="muted">2016 — 2019</div>
+                <p class="muted">Collaudo, assemblaggio, aggiornamento firmware e ricondizionamento dispositivi elettronici.</p>
+              </div>
+            </div>
+
+            <div class="section">
+              <h3>Istruzione</h3>
+                <div class="experience-item">
+                    <strong>Università di Pavia — Computer Science and Multimedia</strong>
+                    <div class="muted">2024 — In corso</div>
+                </div>
+              <div class="experience-item">
+                <strong>Università di Pavia — Ingegneria Informatica ed Elettronica</strong>
+                <div class="muted">2019 — 2024</div>
+              </div>
+
+              <div class="experience-item">
+                <strong>ITIS G. Caramuel — Perito Elettronico</strong>
+                <div class="muted">2014 — 2019</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside style="width:280px">
+            <div class="section">
+              <h3>Competenze</h3>
+              <p class="muted">
+                • Conoscenza della maggior parte dei linguaggi di programmazione <br>
+                • Capacità di analisi e problem solving tecnico<br>
+                • Gestione della classe con approccio strutturato e collaborativo<br>
+                • Coordinamento di attività di gruppo e gestione ordinata del lavoro didattico<br>
+                • Pianificazione delle lezioni e organizzazione del tempo<br>
+                • Comunicazione efficace e orientata agli studenti</p></div>
+            <div class="section">
+              <h3>Lingue</h3>
+              <p class="muted">Italiano (madrelingua)<br>Inglese (B2)</p>
+            </div>
+
+            <div class="section">
+              <h3>Ulteriori informazioni</h3>
+              <p class="muted">Appassionato di scacchi, videogiochi, sport da combattimento, motociclismo, buon cibo, viaggi e tecnologia in tutte le sue forme.</p>
+            </div>
+          </aside>
+
+        </div>
+
+        <footer>
+          © 2025 Raffaele Cammi — Curriculum Vitae
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('printBtn').addEventListener('click', ()=> window.print());
+  </script>
+</body>
+</html>
