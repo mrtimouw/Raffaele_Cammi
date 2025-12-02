@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Raffaele Cammi — Curriculum Vitae (EN)</title>
+  <title>Raffaele Cammi — Curriculum Vitae</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
   <style>
     :root{ --bg:#0f1724; --card:#0b1220; --accent:#06b6d4; --muted:#94a3b8; --glass: rgba(255,255,255,0.04); --radius:16px; font-family: 'Inter',system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
@@ -25,8 +25,15 @@
     .linkbtn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
     footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
 
-    @media (max-width:1024px){ .top{grid-template-columns:1fr} aside{width:100%!important} }
-    @media (max-width:768px){ .container{padding:16px} .avatar{width:140px;height:140px;margin:0 auto} }
+    /* Responsive */
+    @media (max-width:1024px){
+      .top{grid-template-columns:1fr}
+      aside{width:100%!important}
+    }
+    @media (max-width:768px){
+      .container{padding:16px}
+      .avatar{width:140px;height:140px;margin:0 auto}
+    }
   </style>
 </head>
 <body>
@@ -36,18 +43,18 @@
       <div class="card">
         <div style="display:flex;flex-direction:column;align-items:center">
           <div class="avatar">
-            <img src="Photo.png" alt="Photo of Raffaele Cammi">
+            <img src="Photo.png" alt="Foto Raffaele Cammi">
           </div>
           <h1 id="name">Raffaele Cammi</h1>
-          <div class="title">Computer Engineer</div>
+          <div class="title">Ingegnere Informatico</div>
           <div class="contact">Pavia (PV)  <a href="mailto:raffaelecammi@gmail.com" style="color:inherit;text-decoration:underline">raffaelecammi@gmail.com</a></div>
 
           <div class="section" style="width:100%;text-align:center;margin-top:20px">
-            <button class="linkbtn" id="printBtn">Print / Save as PDF</button>
+            <button class="linkbtn" id="printBtn">Stampa / Salva come PDF</button>
           </div>
 
           <div class="section" style="width:100%;text-align:center;margin-top:10px">
-            <button class="linkbtn" onclick="window.location.href='index_it.html'">🇮🇹 Italian Version</button>
+            <button class="linkbtn" onclick="window.location.href='index.html'">English Version</button>
           </div>
         </div>
       </div>
@@ -56,55 +63,55 @@
         <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:start">
 
           <div style="flex:1;min-width:260px">
-            <h2 style="margin:0;font-size:18px">Profile</h2>
-            <p class="muted" style="margin-top:6px">I am a sociable, ambitious and flexible person with a passion for teaching and technology. I combine technical skills with strong communication and organizational abilities, developed through both academic and professional environments.</p>
+            <h2 style="margin:0;font-size:18px">Profilo</h2>
+            <p class="muted" style="margin-top:6px">Sono una persona socievole, ambiziosa e flessibile, con passione per la didattica e la tecnologia. Unisco competenze tecniche a una forte attitudine comunicativa e organizzativa, maturata nel mondo accademico e lavorativo</p>
 
             <div class="section">
-              <h3>Experience</h3>
+              <h3>Esperienze</h3>
 
               <div class="experience-item">
-                <strong>IISS "Leonardo Da Vinci", Vigevano — Mathematics & Physics Teacher</strong>
-                <div class="muted">2024 — Present</div>
-                <p class="muted">Teaching in a high school environment, lesson planning and management, continuous assessment, personalized student support and classroom group management.</p>
+                <strong>IISS "Leonardo Da Vinci", Vigevano — Docente di Matematica e Fisica</strong>
+                <div class="muted">2024 — Presente</div>
+                <p class="muted">Insegnamento presso scuola secondaria superiore, preparazione e gestione delle lezioni, valutazione continua, supporto didattico personalizzato agli studenti e gestione del gruppo classe</p>
               </div>
 
               <div class="experience-item">
-                <strong>Private Tutor</strong>
-                <div class="muted">2018 — Present</div>
-                <p class="muted">Individual tutoring in mathematics, physics, electronics, and computer science for high school and university students.</p>
+                <strong>Tutor Privato</strong>
+                <div class="muted">2018 — Presente</div>
+                <p class="muted">Tutoraggio individuale in matematica, fisica, elettronica e informatica per studenti di scuole superiori e università</p>
               </div>
 
               <div class="experience-item">
-                <strong>AICSport — Lifeguard / Customer Assistance</strong>
-                <div class="muted">2019 — 2024 (seasonal)</div>
-                <p class="muted">Supervision, safety, and public assistance.</p>
+                <strong>AICSport — Bagnino / Assistente alla clientela</strong>
+                <div class="muted">2019 — 2024 (stagionale)</div>
+                <p class="muted">Sorveglianza, sicurezza, assistenza al pubblico</p>
               </div>
 
               <div class="experience-item">
-                <strong>Le Rotonde S.R.L. — Night Lifeguard</strong>
-                <div class="muted">2021 — 2024 (seasonal)</div>
-                <p class="muted">Safety support in high-attendance environments.</p>
+                <strong>Le Rotonde S.R.L. — Bagnino notturno</strong>
+                <div class="muted">2021 — 2024 (stagionale)</div>
+                <p class="muted">Supporto alla sicurezza in contesti ad alta affluenza</p>
               </div>
 
               <div class="experience-item">
-                <strong>Neutel S.R.L. — Technical Internship</strong>
+                <strong>Neutel S.R.L. — Stage tecnico</strong>
                 <div class="muted">2016 — 2019</div>
-                <p class="muted">Testing, firmware updates and refurbishment of electronic devices.</p>
+                <p class="muted">Collaudo, aggiornamento firmware e ricondizionamento dispositivi elettronici</p>
               </div>
             </div>
 
             <div class="section">
-              <h3>Education</h3>
+              <h3>Istruzione</h3>
               <div class="experience-item">
-                <strong>University of Pavia — Computer Science and Multimedia</strong>
-                <div class="muted">2024 — Ongoing</div>
+                <strong>Università di Pavia — Computer Science and Multimedia</strong>
+                <div class="muted">2024 — In corso</div>
               </div>
               <div class="experience-item">
-                <strong>University of Pavia — Computer and Electronic Engineering</strong>
+                <strong>Università di Pavia — Ingegneria Informatica ed Elettronica</strong>
                 <div class="muted">2019 — 2024</div>
               </div>
               <div class="experience-item">
-                <strong>ITIS G. Caramuel — Electronic Technician</strong>
+                <strong>ITIS G. Caramuel — Perito Elettronico</strong>
                 <div class="muted">2014 — 2019</div>
               </div>
             </div>
@@ -112,32 +119,28 @@
 
           <aside style="width:280px;min-width:260px">
             <div class="section">
-              <h3>Skills</h3>
+              <h3>Competenze</h3>
               <p class="muted">
-                • Knowledge of most programming languages <br>
-                • Technical analysis and problem solving <br>
-                • Classroom management with a structured and collaborative approach <br>
-                • Coordination of group activities and organized handling of teaching tasks <br>
-                • Lesson planning and time management <br>
-                • Effective communication oriented to student needs
-              </p>
-            </div>
-
+                • Conoscenza della maggior parte dei linguaggi di programmazione <br>
+                • Capacità di analisi e problem solving tecnico<br>
+                • Gestione della classe con approccio strutturato e collaborativo<br>
+                • Coordinamento di attività di gruppo e gestione ordinata del lavoro didattico<br>
+                • Pianificazione delle lezioni e organizzazione del tempo<br>
+                • Comunicazione efficace e orientata agli studenti</p></div>
             <div class="section">
-              <h3>Languages</h3>
-              <p class="muted">Italian (native)<br>English (B2)</p>
+              <h3>Lingue</h3>
+              <p class="muted">Italiano (madrelingua)<br>Inglese (B2)</p>
             </div>
-
             <div class="section">
-              <h3>Additional Information</h3>
-              <p class="muted">Passionate about chess, video games, combat sports, motorcycling, good food, travel, and technology in all its forms.</p>
+              <h3>Ulteriori informazioni</h3>
+              <p class="muted">Appassionato di scacchi, videogiochi, sport da combattimento, motociclismo, buon cibo, viaggi e tecnologia in tutte le sue forme</p>
             </div>
           </aside>
 
         </div>
 
         <footer>
-          © 2025 Raffaele Cammi — Curriculum Vitae (EN)
+          © 2025 Raffaele Cammi — Curriculum Vitae
         </footer>
       </div>
     </div>
