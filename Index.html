@@ -24,14 +24,22 @@
     .muted{color:var(--muted)}
     .linkbtn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px 14px;border-radius:10px;color:var(--muted);cursor:pointer}
     footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
-    @media (max-width:860px){.top{grid-template-columns:1fr} .avatar{width:140px;height:140px;margin:0 auto}}
+
+    /* Responsive */
+    @media (max-width:1024px){
+      .top{grid-template-columns:1fr}
+      aside{width:100%!important}
+    }
+    @media (max-width:768px){
+      .container{padding:16px}
+      .avatar{width:140px;height:140px;margin:0 auto}
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="grid top">
 
-      <!-- LEFT COLUMN -->
       <div class="card">
         <div style="display:flex;flex-direction:column;align-items:center">
           <div class="avatar">
@@ -47,60 +55,57 @@
         </div>
       </div>
 
-      <!-- RIGHT COLUMN -->
       <div class="card">
-        <div style="display:flex;justify-content:space-between;gap:20px;align-items:start">
+        <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:start">
 
-          <!-- MAIN CONTENT -->
-          <div style="flex:1">
+          <div style="flex:1;min-width:260px">
             <h2 style="margin:0;font-size:18px">Profilo</h2>
-            <p class="muted" style="margin-top:6px">Sono una persona sociale, ambiziosa e flessibile, con passione per la didattica e la tecnologia. Unisco competenze tecniche a una forte attitudine comunicativa e organizzativa, maturata sia nel mondo dell’ingegneria informatica che nell’insegnamento.</p>
+            <p class="muted" style="margin-top:6px">Sono una persona socievole, ambiziosa e flessibile, con passione per la didattica e la tecnologia. Unisco competenze tecniche a una forte attitudine comunicativa e organizzativa, maturata nel mondo accademico e lavorativo</p>
 
             <div class="section">
               <h3>Esperienze</h3>
 
               <div class="experience-item">
-                <strong>Docente — Matematica e Fisica</strong>
-                <div class="muted">IISS "Leonardo Da Vinci", Vigevano — Set 2024 — Giu 2025; ripreso Set 2025 — Presente</div>
-                <p class="muted">Insegnamento presso scuola secondaria superiore. Preparazione e gestione delle lezioni, valutazione continua, supporto didattico personalizzato agli studenti e gestione del gruppo classe.</p>
+                <strong>IISS "Leonardo Da Vinci", Vigevano — Docente di Matematica e Fisica</strong>
+                <div class="muted">2024 — Presente</div>
+                <p class="muted">Insegnamento presso scuola secondaria superiore, preparazione e gestione delle lezioni, valutazione continua, supporto didattico personalizzato agli studenti e gestione del gruppo classe</p>
               </div>
 
               <div class="experience-item">
                 <strong>Tutor Privato</strong>
                 <div class="muted">2018 — Presente</div>
-                <p class="muted">Tutoraggio individuale in matematica, fisica, elettronica e informatica per studenti di scuole superiori e università.</p>
+                <p class="muted">Tutoraggio individuale in matematica, fisica, elettronica e informatica per studenti di scuole superiori e università</p>
               </div>
 
               <div class="experience-item">
-                <strong>S.COOP.R.L. AICSPORT — Bagnino / Assistente alla clientela</strong>
+                <strong>AICSport — Bagnino / Assistente alla clientela</strong>
                 <div class="muted">2019 — 2024 (stagionale)</div>
-                <p class="muted">Sorveglianza, sicurezza, assistenza al pubblico.</p>
+                <p class="muted">Sorveglianza, sicurezza, assistenza al pubblico</p>
               </div>
 
               <div class="experience-item">
                 <strong>Le Rotonde S.R.L. — Bagnino notturno</strong>
                 <div class="muted">2021 — 2024 (stagionale)</div>
-                <p class="muted">Supporto alla sicurezza in contesti ad alta affluenza.</p>
+                <p class="muted">Supporto alla sicurezza in contesti ad alta affluenza</p>
               </div>
 
               <div class="experience-item">
                 <strong>Neutel S.R.L. — Stage tecnico</strong>
                 <div class="muted">2016 — 2019</div>
-                <p class="muted">Collaudo, assemblaggio, aggiornamento firmware e ricondizionamento dispositivi elettronici.</p>
+                <p class="muted">Collaudo, aggiornamento firmware e ricondizionamento dispositivi elettronici</p>
               </div>
             </div>
 
             <div class="section">
               <h3>Istruzione</h3>
-                <div class="experience-item">
-                    <strong>Università di Pavia — Computer Science and Multimedia</strong>
-                    <div class="muted">2024 — In corso</div>
-                </div>
+              <div class="experience-item">
+                <strong>Università di Pavia — Computer Science and Multimedia</strong>
+                <div class="muted">2024 — In corso</div>
+              </div>
               <div class="experience-item">
                 <strong>Università di Pavia — Ingegneria Informatica ed Elettronica</strong>
                 <div class="muted">2019 — 2024</div>
               </div>
-
               <div class="experience-item">
                 <strong>ITIS G. Caramuel — Perito Elettronico</strong>
                 <div class="muted">2014 — 2019</div>
@@ -108,8 +113,7 @@
             </div>
           </div>
 
-          <!-- SIDEBAR -->
-          <aside style="width:280px">
+          <aside style="width:280px;min-width:260px">
             <div class="section">
               <h3>Competenze</h3>
               <p class="muted">
@@ -123,10 +127,9 @@
               <h3>Lingue</h3>
               <p class="muted">Italiano (madrelingua)<br>Inglese (B2)</p>
             </div>
-
             <div class="section">
               <h3>Ulteriori informazioni</h3>
-              <p class="muted">Appassionato di scacchi, videogiochi, sport da combattimento, motociclismo, buon cibo, viaggi e tecnologia in tutte le sue forme.</p>
+              <p class="muted">Appassionato di scacchi, videogiochi, sport da combattimento, motociclismo, buon cibo, viaggi e tecnologia in tutte le sue forme</p>
             </div>
           </aside>
 
@@ -140,7 +143,7 @@
   </div>
 
   <script>
-    document.getElementById('printBtn').addEventListener('click', ()=> window.print());
+    document.getElementById('printBtn').addEventListener('click', ()=> window.print())
   </script>
 </body>
 </html>
